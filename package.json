@@ -1,0 +1,16 @@
+{
+  "name": "coolshop-theme-default",
+  "version": "0.0.1",
+  "view engine": "jade",
+  "static": "./static",
+  "description": "a example theme module for Theme, the module theme loader",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "EEP <coolicer@foxmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "theme"
+  ]
+}
