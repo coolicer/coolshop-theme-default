@@ -1,0 +1,32 @@
+extends layout
+block content
+    div.signup
+        form(action="/signup", method="post")
+            .row
+                .small-8.columns
+                    .small-3.columns
+                        label(for="userId", class="right inline") 用户名
+                    .small-9.columns
+                        input(type="text",id="userId", placeholder="输入用户名")
+            .row
+                .small-8.columns
+                    .small-3.columns
+                        label(for="userPwd", class="right inline") 密码
+                    .small-9.columns
+                        input(type="password",id="userPwd", placeholder="密码")
+            .row
+                .small-8.columns
+                    .small-3.columns
+                        label(for="userPwd_", class="right inline") 确认密码
+                    .small-9.columns
+                        input(type="password",id="userPwd_", placeholder="确认密码")
+            .row
+                .small-8.columns
+                    .small-3.columns
+                        label(for="userMail", class="right inline") 邮箱地址
+                    .small-9.columns
+                        input(type="email",id="userMail",name="userMail", placeholder="邮箱地址")
+
+            .row
+                .small-3.small-centered.columns
+                    button(type="submit",class="button tiny") 提交
