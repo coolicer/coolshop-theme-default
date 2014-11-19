@@ -2,7 +2,11 @@ doctype html
 html
   include ./head.jade
 
-  body
-    include ./header.jade
-    block content
-  include ./footer.jade
+  body.antialiased.hide-extras
+    .inner-wrap
+        include ./header.jade
+        #info
+            pre #{error}
+            pre #{success}
+        block content
+        include ./footer.jade

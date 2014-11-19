@@ -1,0 +1,9 @@
+extends layout
+block content
+    div#notify
+        if typeof(error) != 'undefined' && error
+            p #{error}
+        if typeof(success) != 'undefined' && success
+            p #{success}
+    div.back
+        a(href="") 返回
