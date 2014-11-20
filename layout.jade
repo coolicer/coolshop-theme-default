@@ -5,5 +5,10 @@ html
   body.antialiased.hide-extras
     .inner-wrap
         include ./header.jade
+        #info
+            .error_info
+                | 全局信息:
+                pre #{error}
+                pre #{success}
         block content
         include ./footer.jade
