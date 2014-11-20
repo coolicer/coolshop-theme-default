@@ -1,9 +1,11 @@
 extends layout
 block content
     div#notify
+        | Notify信息:
         if typeof(error) != 'undefined' && error
             p #{error}
         if typeof(success) != 'undefined' && success
             p #{success}
     div.back
-        a(href="") 返回
+        - var ref = typeof(referer) !== 'undefined' ? referer : '/'
+        a(href="#{ref}") 返回
