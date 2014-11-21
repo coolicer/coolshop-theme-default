@@ -14,6 +14,14 @@ block content
                         label(for="userPwd", class="right inline") 密码
                     .small-9.columns
                         input(type="password",id="userPwd", name="userPwd",placeholder="密码")
+            .row
+                .small-8.columns
+                    .small-3.columns
+                        label(for="loginCaptcha", class="right inline") 验证码
+                    .small-6.columns
+                        input(type="text",id="loginCaptcha", name="loginCaptcha",placeholder="验证码")
+                    .small-3.columns
+                        img(src='/captcha' )
 
             .row
                 .small-3.small-centered.columns
