@@ -1,0 +1,13 @@
+extends layout
+block content
+    div.forgot
+        form(action="/forgot", method="post")
+            .row
+                .small-8.columns
+                    .small-3.columns
+                        label(for="userMail", class="right inline") 邮箱地址
+                    .small-9.columns
+                        input(type="text",id="userMail",name="userMail", placeholder="输入邮箱地址")
+            .row
+                .small-3.small-centered.columns
+                    button(type="submit",class="button tiny") 提交

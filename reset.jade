@@ -1,0 +1,23 @@
+extends layout
+block content
+    div.reset
+        form(action="/reset_pass", method="post")
+            .row
+                .small-8.columns
+                    .small-3.columns
+                        label(for="userPwd", class="right inline") 密码
+                    .small-9.columns
+                        input(type="password",id="userPwd", name="userPwd",placeholder="密码")
+            .row
+                .small-8.columns
+                    .small-3.columns
+                        label(for="userPwd_", class="right inline") 重新密码
+                    .small-9.columns
+                        input(type="password",id="userPwd_", name="userPwd_",placeholder="密码")
+               .row
+                    .small-3.small-centered.columns
+                        button(type="submit",class="button tiny") 提交
+               .row
+                   .small-8.columns
+                       input(type="hidden", name="name", id="name",value="#{name}")
+                       input(type="hidden", name="key", id="key",value="#{key}")
