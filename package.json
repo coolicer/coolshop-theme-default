@@ -1,6 +1,6 @@
 {
   "name": "coolshop-theme-default",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "view engine": "jade",
   "static": "./static",
   "description": "a example theme module for Theme, the module theme loader",
